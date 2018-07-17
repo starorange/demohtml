@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 body{
 	margin:0;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -34,16 +29,60 @@ body a:hover,body a:focus{
 	outline: none;
 } 
 /*-- header --*/
+.dropbtn { 
+    position: absolute;
+	
+    background-color: #fff;
+    color: #008080;
+    padding: 12px;
+    font-size: 6px;
+    border: none;
+    cursor: pointer;
+	
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+	display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:999;
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 .header {
     background-color: #fff;
     padding: 1.5em 0;
     position: relative;
 }
-.english{
-    position:relative ;
-	text-align: right;
-    color:#fff;		
-	}
+
 
 .agile_social_banner {
     float: right;
